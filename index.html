@@ -193,7 +193,7 @@
             <!-- Projects Slider -->
             <div id="projectSlider" class="flex overflow-x-auto gap-8 pb-8 hide-scrollbar snap-x snap-mandatory scroll-smooth -mx-4 px-4 sm:mx-0 sm:px-0 items-stretch">
                 
-                <!-- Project 1 (NEW: AWS Survival Engine) -->
+                <!-- Project 1 (AWS Survival Engine) -->
                 <div class="flex-none w-[85vw] sm:w-[350px] lg:w-[400px] snap-start bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2 flex flex-col">
                     <div class="h-2 bg-gradient-to-r from-amber-500 to-orange-400"></div>
                     <div class="p-8 flex-1 flex flex-col">
@@ -202,7 +202,7 @@
                         <p class="text-slate-600 mb-6 flex-1 text-sm leading-relaxed">
                             <strong class="text-slate-900">The Challenge:</strong> Legacy binary classification models only predict <em>if</em> a customer will default, failing to forecast exactly <em>when</em> the business will incur losses.<br><br>
                             <strong class="text-slate-900">The Solution:</strong> Engineered an end-to-end AWS cloud pipeline using Python and Boto3. Developed a Cox Proportional Hazards model to calculate dynamic Hazard Ratios and 12-month survival curves.<br><br>
-                            <strong class="text-slate-900">The Impact:</strong> Successfully batch-scored 10,000+ unseen loans, exporting predictive timelines to an Amazon S3 Data Lake. Quantified the accelerating effect of Debt-to-Income ratios on default timelines.
+                            <strong class="text-slate-900">The Impact:</strong> Establishes a scalable cloud architecture that translates hazard ratios into actionable intelligence, enabling credit teams to deploy targeted interventions and refinancing offers before the critical default window.
                         </p>
                         <a href="https://github.com/suryaselvaraj22/fintech-pd-survival-engine" target="_blank" class="text-amber-600 font-medium hover:text-amber-700 mb-4 inline-flex items-center group">
                             View Code Repository <i class="fas fa-arrow-right ml-2 transform group-hover:translate-x-1 transition-transform"></i>
@@ -215,24 +215,24 @@
                     </div>
                 </div>
 
-                <!-- Project 2 (Segmentation) -->
+                <!-- Project 2 (Claims Risk) -->
                 <div class="flex-none w-[85vw] sm:w-[350px] lg:w-[400px] snap-start bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2 flex flex-col">
-                    <div class="h-2 bg-gradient-to-r from-blue-500 to-cyan-400"></div>
+                    <div class="h-2 bg-gradient-to-r from-purple-500 to-pink-400"></div>
                     <div class="p-8 flex-1 flex flex-col">
-                        <div class="text-sm font-bold text-blue-600 tracking-wider uppercase mb-2">Unsupervised ML / Clustering</div>
-                        <h3 class="text-2xl font-bold text-slate-900 mb-4">Customer Segmentation & Acquisition Engine</h3>
+                        <div class="text-sm font-bold text-purple-600 tracking-wider uppercase mb-2">Supervised ML / Regression</div>
+                        <h3 class="text-2xl font-bold text-slate-900 mb-4">Predictive Liability & Risk Engine</h3>
                         <p class="text-slate-600 mb-6 flex-1 text-sm leading-relaxed">
-                            <strong class="text-slate-900">The Challenge:</strong> A "spray and pray" digital marketing strategy led to high Customer Acquisition Costs (CAC) and low conversion rates across diverse demographic funnels.<br><br>
-                            <strong class="text-slate-900">The Solution:</strong> Built a data generation engine to simulate 100k+ realistic inbound leads. Designed a PySpark pipeline utilizing VectorAssemblers and StandardScaler (Z-Score Normalization) to feed into a K-Means Clustering algorithm.<br><br>
-                            <strong class="text-slate-900">The Impact:</strong> Achieved an elite Silhouette Score of 0.77, discovering three distinct "hidden personas." Enabled dynamic routing to specific business workflows, driving a simulated 3x lift in Click-Through Rates.
+                            <strong class="text-slate-900">The Challenge:</strong> Traditional actuarial methods rely on broad averages, leading to over-reserving (trapped capital) or under-reserving (P&L shocks) for liability claims.<br><br>
+                            <strong class="text-slate-900">The Solution:</strong> Architected an end-to-end PySpark ML pipeline on Databricks. Engineered a Gradient Boosted Tree model that captures non-linear risk interactions, outperforming standard GLMs, and tracked the deployment via MLflow Unity Catalog.<br><br>
+                            <strong class="text-slate-900">The Impact:</strong> Demonstrates the power of non-linear risk modeling via decile analysis. This framework successfully isolates routine claims from catastrophic shock losses, unlocking the ability to optimize capital reserves and pricing strategies.
                         </p>
-                        <a href="https://github.com/suryaselvaraj22/ifb-customer-segmentation" target="_blank" class="text-blue-600 font-medium hover:text-blue-700 mb-4 inline-flex items-center group">
+                        <a href="https://github.com/suryaselvaraj22/rbi-claims-risk-engine" target="_blank" class="text-purple-600 font-medium hover:text-purple-700 mb-4 inline-flex items-center group">
                             View Code Repository <i class="fas fa-arrow-right ml-2 transform group-hover:translate-x-1 transition-transform"></i>
                         </a>
                         <div class="flex flex-wrap gap-2 mt-auto pt-4 border-t border-slate-100">
                             <span class="text-xs font-semibold text-slate-500 bg-slate-100 px-2 py-1 rounded">Databricks</span>
-                            <span class="text-xs font-semibold text-slate-500 bg-slate-100 px-2 py-1 rounded">PySpark K-Means</span>
-                            <span class="text-xs font-semibold text-slate-500 bg-slate-100 px-2 py-1 rounded">Feature Scaling</span>
+                            <span class="text-xs font-semibold text-slate-500 bg-slate-100 px-2 py-1 rounded">PySpark GBT</span>
+                            <span class="text-xs font-semibold text-slate-500 bg-slate-100 px-2 py-1 rounded">MLflow MLOps</span>
                         </div>
                     </div>
                 </div>
@@ -246,9 +246,9 @@
                         <p class="text-slate-600 mb-6 flex-1 text-sm leading-relaxed">
                             <strong class="text-slate-900">The Challenge:</strong> Reactive call-center retention efforts led to high policyholder churn rates and bloated "Cost-to-Serve" operational metrics for enterprise insurance clients.<br><br>
                             <strong class="text-slate-900">The Solution:</strong> Architected a Databricks pipeline leveraging PySpark and XGBoost to predict customer churn probability based on historical interaction frequency, billing friction, and policy metadata.<br><br>
-                            <strong class="text-slate-900">The Impact:</strong> Enabled proactive intervention strategies by identifying at-risk accounts before they canceled. Translated operational efficiency into a measurable reduction in Cost-to-Serve and improved Customer Lifetime Value (LTV).
+                            <strong class="text-slate-900">The Impact:</strong> Provides a predictive blueprint for proactive intervention. By isolating the key drivers of churn, this engine enables operations teams to reduce Cost-to-Serve and strategically protect Customer Lifetime Value (LTV).
                         </p>
-                        <a href="https://github.com/suryaselvaraj22/strategic-retention-engine" target="_blank" class="text-emerald-600 font-medium hover:text-emerald-700 mb-4 inline-flex items-center group">
+                        <a href="https://github.com/suryaselvaraj22/NW_SF_strategic-retention-engine" target="_blank" class="text-emerald-600 font-medium hover:text-emerald-700 mb-4 inline-flex items-center group">
                             View Code Repository <i class="fas fa-arrow-right ml-2 transform group-hover:translate-x-1 transition-transform"></i>
                         </a>
                         <div class="flex flex-wrap gap-2 mt-auto pt-4 border-t border-slate-100">
@@ -259,29 +259,51 @@
                     </div>
                 </div>
 
-                <!-- Project 4 (Claims Risk) -->
+                <!-- Project 4 (Segmentation) -->
                 <div class="flex-none w-[85vw] sm:w-[350px] lg:w-[400px] snap-start bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2 flex flex-col">
-                    <div class="h-2 bg-gradient-to-r from-purple-500 to-pink-400"></div>
+                    <div class="h-2 bg-gradient-to-r from-blue-500 to-cyan-400"></div>
                     <div class="p-8 flex-1 flex flex-col">
-                        <div class="text-sm font-bold text-purple-600 tracking-wider uppercase mb-2">Supervised ML / Regression</div>
-                        <h3 class="text-2xl font-bold text-slate-900 mb-4">Predictive Liability & Risk Engine</h3>
+                        <div class="text-sm font-bold text-blue-600 tracking-wider uppercase mb-2">Unsupervised ML / Clustering</div>
+                        <h3 class="text-2xl font-bold text-slate-900 mb-4">Customer Segmentation & Acquisition</h3>
                         <p class="text-slate-600 mb-6 flex-1 text-sm leading-relaxed">
-                            <strong class="text-slate-900">The Challenge:</strong> Traditional actuarial methods rely on broad averages, leading to over-reserving (trapped capital) or under-reserving (P&L shocks) for liability claims.<br><br>
-                            <strong class="text-slate-900">The Solution:</strong> Architected an end-to-end PySpark ML pipeline on Databricks. Engineered a Gradient Boosted Tree model that captures non-linear risk interactions, outperforming standard GLMs, and tracked the deployment via MLflow Unity Catalog.<br><br>
-                            <strong class="text-slate-900">The Impact:</strong> Successfully segmented risk, demonstrating via decile analysis that the model accurately isolates routine claims ($3k) from severe shock losses ($35k+), enabling precise capital allocation.
+                            <strong class="text-slate-900">The Challenge:</strong> A "spray and pray" digital marketing strategy led to high Customer Acquisition Costs (CAC) and low conversion rates across diverse demographic funnels.<br><br>
+                            <strong class="text-slate-900">The Solution:</strong> Built a data generation engine to simulate 100k+ realistic inbound leads. Designed a PySpark pipeline utilizing VectorAssemblers and StandardScaler (Z-Score Normalization) to feed into a K-Means Clustering algorithm.<br><br>
+                            <strong class="text-slate-900">The Impact:</strong> Delivers a robust clustering framework that uncovers distinct behavioral personas, empowering marketing teams to replace generic campaigns with dynamic, personalized routing to optimize Customer Acquisition Cost (CAC).
                         </p>
-                        <a href="https://github.com/suryaselvaraj22/rbi-claims-risk-engine" target="_blank" class="text-purple-600 font-medium hover:text-purple-700 mb-4 inline-flex items-center group">
+                        <a href="https://github.com/suryaselvaraj22/ifbi-customer-segmentation" target="_blank" class="text-blue-600 font-medium hover:text-blue-700 mb-4 inline-flex items-center group">
                             View Code Repository <i class="fas fa-arrow-right ml-2 transform group-hover:translate-x-1 transition-transform"></i>
                         </a>
                         <div class="flex flex-wrap gap-2 mt-auto pt-4 border-t border-slate-100">
                             <span class="text-xs font-semibold text-slate-500 bg-slate-100 px-2 py-1 rounded">Databricks</span>
-                            <span class="text-xs font-semibold text-slate-500 bg-slate-100 px-2 py-1 rounded">PySpark GBT</span>
-                            <span class="text-xs font-semibold text-slate-500 bg-slate-100 px-2 py-1 rounded">MLflow MLOps</span>
+                            <span class="text-xs font-semibold text-slate-500 bg-slate-100 px-2 py-1 rounded">PySpark K-Means</span>
+                            <span class="text-xs font-semibold text-slate-500 bg-slate-100 px-2 py-1 rounded">Feature Scaling</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Project 5 (Predictive Maintenance) -->
+                <!-- Project 5 (NEW: Workforce Forecasting) -->
+                <div class="flex-none w-[85vw] sm:w-[350px] lg:w-[400px] snap-start bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2 flex flex-col">
+                    <div class="h-2 bg-gradient-to-r from-indigo-500 to-blue-500"></div>
+                    <div class="p-8 flex-1 flex flex-col">
+                        <div class="text-sm font-bold text-indigo-600 tracking-wider uppercase mb-2">Supervised ML / Time-Series</div>
+                        <h3 class="text-2xl font-bold text-slate-900 mb-4">Enterprise Demand Forecasting</h3>
+                        <p class="text-slate-600 mb-6 flex-1 text-sm leading-relaxed">
+                            <strong class="text-slate-900">The Challenge:</strong> Reactive agent scheduling and manual volume forecasting lead to under-staffing during peak hours and wasted operational expenditure during lulls.<br><br>
+                            <strong class="text-slate-900">The Solution:</strong> Built a PySpark Pandas UDF architecture on Databricks to distribute the training of Facebook Prophet models. This enables simultaneous, parallel forecasting across multiple business departments.<br><br>
+                            <strong class="text-slate-900">The Impact:</strong> Establishes a highly scalable forecasting engine that predicts exact daily demand 365 days out, allowing operations teams to optimize workforce allocation and strictly control Cost-to-Serve.
+                        </p>
+                        <a href="https://github.com/suryaselvaraj22/time-series-forecasting" target="_blank" class="text-indigo-600 font-medium hover:text-indigo-700 mb-4 inline-flex items-center group">
+                            View Code Repository <i class="fas fa-arrow-right ml-2 transform group-hover:translate-x-1 transition-transform"></i>
+                        </a>
+                        <div class="flex flex-wrap gap-2 mt-auto pt-4 border-t border-slate-100">
+                            <span class="text-xs font-semibold text-slate-500 bg-slate-100 px-2 py-1 rounded">Databricks</span>
+                            <span class="text-xs font-semibold text-slate-500 bg-slate-100 px-2 py-1 rounded">Pandas UDFs</span>
+                            <span class="text-xs font-semibold text-slate-500 bg-slate-100 px-2 py-1 rounded">Prophet</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 (Predictive Maintenance) -->
                 <div class="flex-none w-[85vw] sm:w-[350px] lg:w-[400px] snap-start bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2 flex flex-col">
                     <div class="h-2 bg-gradient-to-r from-rose-500 to-red-400"></div>
                     <div class="p-8 flex-1 flex flex-col">
@@ -290,7 +312,7 @@
                         <p class="text-slate-600 mb-6 flex-1 text-sm leading-relaxed">
                             <strong class="text-slate-900">The Challenge:</strong> Legacy maintenance strategies rely on reactive repairs or fixed schedules, leading to unplanned downtime and bloated operational costs.<br><br>
                             <strong class="text-slate-900">The Solution:</strong> Engineered an end-to-end PySpark pipeline on Databricks using synthetic IoT sensor data. Trained an Accelerated Failure Time (AFT) Survival Regression model to predict Remaining Useful Life (RUL).<br><br>
-                            <strong class="text-slate-900">The Impact:</strong> Quantified the exact lifespan impact of industrial friction (voltage spikes, vibration), shifting strategy from "will it fail?" to a dynamic, predictive maintenance timeline.
+                            <strong class="text-slate-900">The Impact:</strong> Quantifies the exact lifespan impact of industrial friction (voltage spikes, vibration), providing a mathematical foundation to shift operational strategies from reactive repairs to predictive, just-in-time maintenance.
                         </p>
                         <a href="https://github.com/suryaselvaraj22/machine-failure-detection" target="_blank" class="text-rose-600 font-medium hover:text-rose-700 mb-4 inline-flex items-center group">
                             View Code Repository <i class="fas fa-arrow-right ml-2 transform group-hover:translate-x-1 transition-transform"></i>
@@ -311,7 +333,7 @@
     <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
             <div class="mb-4 md:mb-0">
-                <span class="text-white font-bold text-xl">Surya "Nivi" Selvaraj<span class="text-brand-500">.</span></span>
+                <span class="text-white font-bold text-xl">Nivi<span class="text-brand-500">.</span></span>
                 <p class="mt-2 text-sm">Data Scientist & Credit Strategist</p>
             </div>
             <div class="flex space-x-6">
